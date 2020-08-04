@@ -102,11 +102,6 @@ const
   {$MESSAGE Error 'Linked version of libswresample is too old!'}
 {$IFEND}
 
-(* Check if linked version is supported *)
-{$IF (LIBSWRESAMPLE_VERSION > LIBSWRESAMPLE_MAX_VERSION)}
-  {$MESSAGE Error 'Linked version of libswresample is not yet supported!'}
-{$IFEND}
-  
 {$IF LIBSWRESAMPLE_VERSION_MAJOR < 1}
   SWR_CH_MAX = 32;  (* < Maximum number of channels *)
 {$ENDIF}

@@ -82,11 +82,6 @@ const
   {$MESSAGE Error 'Linked version of libavformat is too old!'}
 {$IFEND}
 
-(* Check if linked versions are supported *)
-{$IF (LIBAVFORMAT_VERSION > LIBAVFORMAT_MAX_VERSION)}
-  {$MESSAGE Error 'Linked version of libavformat is not yet supported!'}
-{$IFEND}
-
 {
 const
   LIBAVFORMAT_BUILD = LIBAVFORMAT_VERSION_INT;

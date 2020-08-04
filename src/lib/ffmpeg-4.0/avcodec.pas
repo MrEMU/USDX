@@ -103,11 +103,6 @@ const
   {$MESSAGE Error 'Linked version of libavcodec is too old!'}
 {$IFEND}
 
-(* Check if linked version is supported *)
-{$IF (LIBAVCODEC_VERSION > LIBAVCODEC_MAX_VERSION)}
-  {$MESSAGE Error 'Linked version of libavcodec is not yet supported!'}
-{$IFEND}
-
 {$IFNDEF FPC}
 type
   // defines for Delphi

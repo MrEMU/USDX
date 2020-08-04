@@ -77,10 +77,6 @@ const
   {$MESSAGE Error 'Linked version of libavutil is too old!'}
 {$IFEND}
 
-{$IF (LIBAVUTIL_VERSION > LIBAVUTIL_MAX_VERSION)}
-  {$MESSAGE Error 'Linked version of libavutil is not yet supported!'}
-{$IFEND}
-
 type
 {$IFNDEF FPC}
   // defines for Delphi

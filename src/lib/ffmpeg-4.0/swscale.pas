@@ -83,11 +83,6 @@ const
                            (LIBSWSCALE_MAX_VERSION_MINOR * VERSION_MINOR) +
 			   (LIBSWSCALE_MAX_VERSION_RELEASE * VERSION_RELEASE);
 
-(* Check if linked versions are supported *)
-{$IF (LIBSWSCALE_VERSION > LIBSWSCALE_MAX_VERSION)}
-  {$MESSAGE Error 'Linked version of libswscale is not yet supported!'}
-{$IFEND}
-
 type
   TQuadCintArray = array[0..3] of cint;
   PQuadCintArray = ^TQuadCintArray;
